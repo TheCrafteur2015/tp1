@@ -44,3 +44,13 @@ Afficher l'historique des commits :
 ```bash
 git log
 ```
+
+Afficher le status du dépôt :
+```bash
+git status
+```
+
+Clôner un dépôt distant :
+```bash
+git clone <adresse>
+```
