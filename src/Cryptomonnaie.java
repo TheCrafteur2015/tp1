@@ -9,4 +9,17 @@ public class Cryptomonnaie {
 		this.valeurDeJeton = valeurDeJeton;
 	}
 
+	public String getNom() {
+		return this.nom;
+	}
+
+	public double getValeurDeJeton() {
+		return this.valeurDeJeton;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("%5s:%10.1f", this.nom, this.valeurDeJeton);
+	}
+
 }
