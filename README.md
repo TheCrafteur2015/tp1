@@ -55,6 +55,16 @@ Clôner un dépôt distant :
 git clone <adresse>
 ```
 
+Afficher la branche courante :
+```bash
+git branch
+```
+
+Changer de branche :
+```bash
+git branch <nom de la branche>
+```
+
 #### Pour configurer git
 
 Afficher la liste des paramètres :
@@ -70,4 +80,21 @@ git config <paramètre>
 Changer la valeur d'un paramètre :
 ```bash
 git config --global <paramètre> <valeur>
+```
+
+#### Publication
+
+Afficher les dépôts distants reliés au dépôt local :
+```bash
+git remote -v
+```
+
+Lier un dépôt local à un dépôt distant :
+```bash
+git remote add origin <adresse ssh>
+```
+
+Lier de manière permanente le dépôt :
+```bash
+git push -u origin master
 ```
