@@ -54,3 +54,20 @@ Clôner un dépôt distant :
 ```bash
 git clone <adresse>
 ```
+
+#### Pour configurer git
+
+Afficher la liste des paramètres :
+```bash
+git config --list
+```
+
+Afficher la valeur d'un paramètre :
+```bash
+git config <paramètre>
+```
+
+Changer la valeur d'un paramètre :
+```bash
+git config --global <paramètre> <valeur>
+```
