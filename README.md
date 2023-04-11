@@ -65,6 +65,11 @@ Changer de branche :
 git branch <nom de la branche>
 ```
 
+Créer une branche :
+```bash
+git checkout -b <nom de la branche> 
+```
+
 #### Pour configurer git
 
 Afficher la liste des paramètres :
