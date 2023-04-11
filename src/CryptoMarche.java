@@ -24,12 +24,17 @@ public class CryptoMarche {
      * @param proprietare
      * @return capital en euros du propriétare.
      */
-    public double capitalEnEuros(String proprietaire){
-        /**
-			FONCTION À IMPLEMENTER
-        **/
-
-        return 0;
+    public double capitalEnEuros(String proprietaire) {
+		if (proprietaire == null)
+			return 0.0;
+		
+		double montant = 0.0;
+		
+		for (Portefeuille p : this.portefeuilles)
+			if (proprietaire.equals(p.getProprietaire()))
+				montant += p.valeurEnEuros();
+		
+		return montant;
     }
 
     /**
